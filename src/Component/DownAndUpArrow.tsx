@@ -1,7 +1,7 @@
 import React from "react";
 import { Associate, TableData } from "../assets/Styles/Home";
-import TableDataSlArrowDownReturn from "../Return/TableDataSlArrowDownReturn";
-import TableDataSlArrowUpReturn from "../Return/TableDataSlArrowUpReturn";
+import ArrowToOpenEmployeeInformation from "./ArrowToOpenEmployeeInformation";
+import ArrowToCloseEmployeeInformation from "./ArrowToCloseEmployeeInformation";
 
 const DownAndUpArrow: React.FC<{
   main: { id: string; image: string; name: string };
@@ -15,9 +15,9 @@ const DownAndUpArrow: React.FC<{
       </TableData>
       <TableData>{main.name}</TableData>
       {openItems.includes(main.id) ? (
-        <TableDataSlArrowUpReturn id={main.id} toggleItem={toggleItem} />
+        <ArrowToCloseEmployeeInformation id={main.id} toggleItem={toggleItem} />
       ) : (
-        <TableDataSlArrowDownReturn id={main.id} toggleItem={toggleItem} />
+        <ArrowToOpenEmployeeInformation id={main.id} toggleItem={toggleItem} />
       )}
     </Associate>
   );

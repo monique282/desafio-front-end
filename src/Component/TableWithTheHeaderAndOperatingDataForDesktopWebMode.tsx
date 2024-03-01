@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { AllEmployees } from "../assets/Styles/Home";
 import { Props } from "../Interface/Props";
-import HeaderEmployeesReturn from "./HeaderEmployeesReturn";
-import EmployeeInformationWebMode from "../Component/EmployeeInformationWebMode";
-import EmployeeInformationAfterClickingDesktopVersionArrow from "../Component/EmployeeInformationAfterClickingDesktopVersionArrow";
-import TableHeaderInDesktopMode from "../Component/TableHeaderInDesktopMode";
+import EmployeeInformationWebMode from "./EmployeeInformationWebMode";
+import EmployeeInformationAfterClickingDesktopVersionArrow from "./EmployeeInformationAfterClickingDesktopVersionArrow";
+import TableHeaderInDesktopMode from "./TableHeaderInDesktopMode";
+import TableHeaderInWebMode from "./TableHeaderInWebMode";
 
-const ListEmployeesReturn: React.FC<Props> = ({ list }) => {
+const TableWithTheHeaderAndOperatingDataForDesktopWebMode: React.FC<Props> = ({
+  list,
+}) => {
   const [isMobileView, setIsMobileView] = useState(false);
   useEffect(() => {
     const handleResize = () => {
@@ -22,7 +24,7 @@ const ListEmployeesReturn: React.FC<Props> = ({ list }) => {
   return (
     <AllEmployees>
       <div style={{ flex: "1" }}>
-        {!isMobileView && <HeaderEmployeesReturn />}
+        {!isMobileView && <TableHeaderInWebMode />}
         {!isMobileView && <EmployeeInformationWebMode list={list} />}
         {isMobileView && <TableHeaderInDesktopMode />}
         {isMobileView && (
@@ -33,4 +35,4 @@ const ListEmployeesReturn: React.FC<Props> = ({ list }) => {
   );
 };
 
-export default ListEmployeesReturn;
+export default TableWithTheHeaderAndOperatingDataForDesktopWebMode;

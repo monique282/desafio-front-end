@@ -2,7 +2,7 @@ import { TableData } from "../assets/Styles/Home";
 import React from "react";
 import { SlArrowUp } from "react-icons/sl";
 
-const TableDataSlArrowUpReturn: React.FC<{
+const ArrowToCloseEmployeeInformation: React.FC<{
   id: string;
   toggleItem: (id: string) => void;
 }> = ({ id, toggleItem }) => {
@@ -19,4 +19,4 @@ const TableDataSlArrowUpReturn: React.FC<{
   );
 };
 
-export default TableDataSlArrowUpReturn;
+export default ArrowToCloseEmployeeInformation;

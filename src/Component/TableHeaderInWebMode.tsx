@@ -1,6 +1,6 @@
 import { HeaderEmployees, TableNames } from "../assets/Styles/Home";
 
-const HeaderEmployeesReturn = () => {
+const TableHeaderInWebMode = () => {
   return (
     <HeaderEmployees>
       <TableNames style={{ width: "80px" }}>FOTO</TableNames>
@@ -12,4 +12,4 @@ const HeaderEmployeesReturn = () => {
   );
 };
 
-export default HeaderEmployeesReturn;
+export default TableHeaderInWebMode;
