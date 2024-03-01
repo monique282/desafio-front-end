@@ -6,7 +6,7 @@ import {
 } from "../assets/Styles/Home";
 import { IoMdSearch } from "react-icons/io";
 
-const SearchContainerReturn: React.FC<PropsSearch> = ({ setSearch, search }) => {
+const SearchBox: React.FC<PropsSearch> = ({ setSearch, search }) => {
   return (
     <>
       <SearchContainer>
@@ -24,4 +24,4 @@ const SearchContainerReturn: React.FC<PropsSearch> = ({ setSearch, search }) => 
   );
 };
 
-export default SearchContainerReturn;
+export default SearchBox;

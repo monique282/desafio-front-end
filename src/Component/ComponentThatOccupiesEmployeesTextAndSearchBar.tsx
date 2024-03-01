@@ -1,13 +1,13 @@
 import React from "react";
 import { Employees, Title } from "../assets/Styles/Home";
-import SearchContainerReturn from "../Return/SearchContainer";
 import { PropsSearch } from "../Interface/Props";
+import SearchBox from "../Return/SearchContainer";
 
 const ComponentThatOccupiesEmployeesTextAndSearchBar: React.FC<PropsSearch> = ({ search, setSearch }) => {
   return (
     <Employees>
       <Title>Funcionários</Title>
-      <SearchContainerReturn search={search} setSearch={setSearch} />
+      <SearchBox search={search} setSearch={setSearch} />
     </Employees>
   );
 };
