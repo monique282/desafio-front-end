@@ -3,8 +3,8 @@ import { AllEmployees } from "../assets/Styles/Home";
 import { Props } from "../Interface/Props";
 import HeaderEmployeesReturn from "./HeaderEmployeesReturn";
 import HeaderEmployeeReturnSmallerScreen from "./HeaderEmployeeReturnSmallerScreen";
-import AssociateReturnSmallerScreen from "./AssociateReturnSmallerScreen";
 import EmployeeInformationWebMode from "./EmployeeInformationWebMode";
+import EmployeeInformationAfterClickingDesktopVersionArrow from "../Component/EmployeeInformationAfterClickingDesktopVersionArrow";
 
 const ListEmployeesReturn: React.FC<Props> = ({ list }) => {
   const [isMobileView, setIsMobileView] = useState(false);
@@ -26,7 +26,9 @@ const ListEmployeesReturn: React.FC<Props> = ({ list }) => {
         {!isMobileView && <HeaderEmployeesReturn />}
         {!isMobileView && <EmployeeInformationWebMode list={list} />}
         {isMobileView && <HeaderEmployeeReturnSmallerScreen />}
-        {isMobileView && <AssociateReturnSmallerScreen list={list} />}
+        {isMobileView && (
+          <EmployeeInformationAfterClickingDesktopVersionArrow list={list} />
+        )}
       </div>
     </AllEmployees>
   );

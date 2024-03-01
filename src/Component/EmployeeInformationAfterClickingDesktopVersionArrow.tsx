@@ -7,9 +7,9 @@ import {
   TableDataSmallScreen,
   TitleSmallScreen,
 } from "../assets/Styles/Home";
-import DownAndUpArrow from "./DownAndUpArrow";
+import DownAndUpArrow from "../Return/DownAndUpArrow";
 
-const AssociateReturnSmallerScreen: React.FC<Props> = ({ list }) => {
+const EmployeeInformationAfterClickingDesktopVersionArrow: React.FC<Props> = ({ list }) => {
   const [openItems, setOpenItems] = useState<string[]>([]);
   const toggleItem = (id: string) => {
     if (openItems.includes(id)) {
@@ -61,4 +61,4 @@ const AssociateReturnSmallerScreen: React.FC<Props> = ({ list }) => {
   );
 };
 
-export default AssociateReturnSmallerScreen;
+export default EmployeeInformationAfterClickingDesktopVersionArrow ;
