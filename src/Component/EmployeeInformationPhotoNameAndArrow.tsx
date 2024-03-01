@@ -24,7 +24,9 @@ const EmployeeInformationPhotoNameAndArrow: React.FC<Props> = ({ list }) => {
             toggleItem={toggleItem}
           />
           {openItems.includes(main.id) ? (
-            <EmployeeInformationPositionHireDateAndTelephoneNumber main={main} />
+            <EmployeeInformationPositionHireDateAndTelephoneNumber
+              main={main}
+            />
           ) : (
             <></>
           )}
