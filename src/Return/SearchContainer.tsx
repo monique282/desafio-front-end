@@ -1,4 +1,4 @@
-import React from "react";
+import { PropsSearch } from "../Interface/Props";
 import {
   SearchContainer,
   SearchInput,
@@ -6,12 +6,7 @@ import {
 } from "../assets/StylesPages/Home";
 import { IoMdSearch } from "react-icons/io";
 
-interface Props {
-  search: string;
-  setSearch: React.Dispatch<React.SetStateAction<string>>;
-}
-
-const SearchContainerReturn: React.FC<Props> = ({ search, setSearch }) => {
+const SearchContainerReturn: React.FC<PropsSearch> = ({ setSearch, search }) => {
   return (
     <>
       <SearchContainer>

@@ -1,32 +1,34 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { AllEmployees } from "../assets/StylesPages/Home";
-import AllEmployeesNameReturn from "./AllEmployeesNameReturn";
-import AllEmployeesDateReturn from "./AllEmployeesDateReturn";
-import AllEmployeesOfficeReturn from "./AllEmployeesOfficeReturn";
-import AllEmployeesPhoneReturn from "./AllEmployeesPhoneReturn";
-import AllEmployeesPhotographReturn from "./AllEmployeesPhotographReturn";
-
-interface Employee {
-  id: string;
-  name: string;
-  job: string;
-  admission_date: string;
-  phone: string;
-  image: string;
-}
-
-interface Props {
-  list: Employee[];
-}
+import { Props } from "../Interface/Props";
+import HeaderEmployeesReturn from "./HeaderEmployeesReturn";
+import AssociateReturn from "./AssociateReturn";
+import HeaderEmployeeReturnSmallerScreen from "./HeaderEmployeeReturnSmallerScreen";
+import AssociateReturnSmallerScreen from "./AssociateReturnSmallerScreen";
 
 const ListEmployeesReturn: React.FC<Props> = ({ list }) => {
+  const [isMobileView, setIsMobileView] = useState(false);
+  const [show, setShow] = useState();
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobileView(window.innerWidth <= 870);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <AllEmployees>
-      <AllEmployeesPhotographReturn list={list} />
-      <AllEmployeesNameReturn list={list} />
-      <AllEmployeesOfficeReturn list={list} />
-      <AllEmployeesDateReturn list={list} />
-      <AllEmployeesPhoneReturn list={list} />
+      <div style={{ flex: "1" }}>
+        {!isMobileView && <HeaderEmployeesReturn />}
+        {!isMobileView && <AssociateReturn list={list} />}
+        {isMobileView && <HeaderEmployeeReturnSmallerScreen />}
+        {isMobileView && <AssociateReturnSmallerScreen list={list} />}
+      </div>
     </AllEmployees>
   );
 };

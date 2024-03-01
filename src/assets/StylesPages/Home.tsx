@@ -34,6 +34,10 @@ export const SearchInput = styled.input`
     border: 1px solid rgba(223, 223, 223, 1);
     outline: none;
   }
+  @media (max-width: 370px) {
+    width: 100%;
+    margin-left: -29px;
+  }
 `;
 export const SearchIcon = styled.div`
   position: absolute;
@@ -43,13 +47,15 @@ export const SearchIcon = styled.div`
   color: rgba(158, 158, 158, 1);
 `;
 export const Title = styled.div`
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 24px;
   font-weight: 500;
   line-height: 28px;
-  letter-spacing: 0px;
   text-align: left;
   color: rgba(28, 28, 28, 1);
+  @media (max-width: 870px) {
+    margin-bottom: 25px;
+  }
 `;
 export const Employees = styled.div`
   font-family: "Varela Round";
@@ -61,22 +67,33 @@ export const Employees = styled.div`
   margin-top: 51px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  @media (max-width: 870px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 export const AllEmployees = styled.div`
   display: flex;
   height: 100%;
+  margin-left: 32px;
+  margin-right: 32px;
 `;
 export const HeaderEmployees = styled.div`
   height: 47px;
   background: linear-gradient(180deg, #5a84c0 0%, #594ed2 100%);
+  border-radius: 5px 5px 0px 0px;
   font-weight: bold;
   margin-top: 51px;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
   overflow-y: auto;
   max-height: "400px";
   border: none;
   p {
-    font-family: Roboto;
+    font-family: "Roboto";
     font-size: 16px;
     font-weight: 500;
     line-height: 19px;
@@ -85,17 +102,27 @@ export const HeaderEmployees = styled.div`
     color: rgba(255, 255, 255, 1);
   }
 `;
+export const TableNames = styled.div`
+  width: 180px;
+`;
+
 export const Associate = styled.div`
   height: 50px;
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 2px 0px #ffffff;
+  border-right-color: #ffffff;
   img {
     width: 34px;
+    height: 34px;
     border-radius: 50%;
     margin-left: 12%;
   }
+`;
+export const TableData = styled.div`
+  width: 180px;
+  display: flex;
+  align-items: center;
 `;
