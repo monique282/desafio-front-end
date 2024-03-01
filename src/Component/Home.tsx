@@ -1,9 +1,9 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { All } from "../assets/StylesPages/Home";
-import EmployeesReturn from "../Return/EmployeesReturn";
+import { All } from "../assets/Styles/Home";
 import ListEmployeesReturn from "../Return/ListEmployeesReturn";
 import { Employee } from "../Interface/Employee";
+import ComponentThatOccupiesEmployeesTextAndSearchBar from "./ComponentThatOccupiesEmployeesTextAndSearchBar";
 
 export default function Home() {
   const [list, setList] = useState<Employee[]>([]); 
@@ -31,7 +31,7 @@ export default function Home() {
 
   return (
     <All>
-      <EmployeesReturn setSearch={setSearch} search={search} />
+      <ComponentThatOccupiesEmployeesTextAndSearchBar setSearch={setSearch} search={search} />
       {filter.length === 0 && <ListEmployeesReturn list={list} />}
       {filter.length !== 0 && <ListEmployeesReturn list={filter} />}
     </All>
