@@ -1,7 +1,7 @@
 import { HeaderEmployees, TableNames } from "../assets/Styles/Home";
 import { VscCircleFilled } from "react-icons/vsc";
 
-const HeaderEmployeeReturnSmallerScreen = () => {
+const TableHeaderInDesktopMode = () => {
   return (
     <HeaderEmployees>
       <TableNames style={{ width: "80px" }}>FOTO</TableNames>
@@ -13,4 +13,4 @@ const HeaderEmployeeReturnSmallerScreen = () => {
   );
 };
 
-export default HeaderEmployeeReturnSmallerScreen;
+export default  TableHeaderInDesktopMode ;

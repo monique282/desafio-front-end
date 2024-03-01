@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import { AllEmployees } from "../assets/Styles/Home";
 import { Props } from "../Interface/Props";
 import HeaderEmployeesReturn from "./HeaderEmployeesReturn";
-import HeaderEmployeeReturnSmallerScreen from "./HeaderEmployeeReturnSmallerScreen";
-import EmployeeInformationWebMode from "./EmployeeInformationWebMode";
+import EmployeeInformationWebMode from "../Component/EmployeeInformationWebMode";
 import EmployeeInformationAfterClickingDesktopVersionArrow from "../Component/EmployeeInformationAfterClickingDesktopVersionArrow";
+import TableHeaderInDesktopMode from "../Component/TableHeaderInDesktopMode";
 
 const ListEmployeesReturn: React.FC<Props> = ({ list }) => {
   const [isMobileView, setIsMobileView] = useState(false);
@@ -24,7 +24,7 @@ const ListEmployeesReturn: React.FC<Props> = ({ list }) => {
       <div style={{ flex: "1" }}>
         {!isMobileView && <HeaderEmployeesReturn />}
         {!isMobileView && <EmployeeInformationWebMode list={list} />}
-        {isMobileView && <HeaderEmployeeReturnSmallerScreen />}
+        {isMobileView && <TableHeaderInDesktopMode />}
         {isMobileView && (
           <EmployeeInformationAfterClickingDesktopVersionArrow list={list} />
         )}

@@ -1,7 +1,7 @@
 import React from "react";
 import { Associate, TableData } from "../assets/Styles/Home";
-import TableDataSlArrowDownReturn from "./TableDataSlArrowDownReturn";
-import TableDataSlArrowUpReturn from "./TableDataSlArrowUpReturn";
+import TableDataSlArrowDownReturn from "../Return/TableDataSlArrowDownReturn";
+import TableDataSlArrowUpReturn from "../Return/TableDataSlArrowUpReturn";
 
 const DownAndUpArrow: React.FC<{
   main: { id: string; image: string; name: string };

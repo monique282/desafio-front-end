@@ -7,7 +7,7 @@ import {
   TableDataSmallScreen,
   TitleSmallScreen,
 } from "../assets/Styles/Home";
-import DownAndUpArrow from "../Return/DownAndUpArrow";
+import DownAndUpArrow from "./DownAndUpArrow";
 
 const EmployeeInformationAfterClickingDesktopVersionArrow: React.FC<Props> = ({ list }) => {
   const [openItems, setOpenItems] = useState<string[]>([]);
