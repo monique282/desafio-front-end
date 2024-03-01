@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import { AllEmployees } from "../assets/Styles/Home";
 import { Props } from "../Interface/Props";
 import EmployeeInformationWebMode from "./EmployeeInformationWebMode";
-import EmployeeInformationAfterClickingDesktopVersionArrow from "./EmployeeInformationAfterClickingDesktopVersionArrow";
 import TableHeaderInDesktopMode from "./TableHeaderInDesktopMode";
 import TableHeaderInWebMode from "./TableHeaderInWebMode";
+import EmployeeInformationPhotoNameAndArrow from "./EmployeeInformationPhotoNameAndArrow";
 
 const TableWithTheHeaderAndOperatingDataForDesktopWebMode: React.FC<Props> = ({
   list,
@@ -28,7 +28,7 @@ const TableWithTheHeaderAndOperatingDataForDesktopWebMode: React.FC<Props> = ({
         {!isMobileView && <EmployeeInformationWebMode list={list} />}
         {isMobileView && <TableHeaderInDesktopMode />}
         {isMobileView && (
-          <EmployeeInformationAfterClickingDesktopVersionArrow list={list} />
+          <EmployeeInformationPhotoNameAndArrow list={list} />
         )}
       </div>
     </AllEmployees>

@@ -9,7 +9,7 @@ import {
 } from "../assets/Styles/Home";
 import DownAndUpArrow from "./DownAndUpArrow";
 
-const EmployeeInformationAfterClickingDesktopVersionArrow: React.FC<Props> = ({ list }) => {
+const EmployeeInformationPhotoNameAndArrow: React.FC<Props> = ({ list }) => {
   const [openItems, setOpenItems] = useState<string[]>([]);
   const toggleItem = (id: string) => {
     if (openItems.includes(id)) {
@@ -61,4 +61,4 @@ const EmployeeInformationAfterClickingDesktopVersionArrow: React.FC<Props> = ({ 
   );
 };
 
-export default EmployeeInformationAfterClickingDesktopVersionArrow ;
+export default EmployeeInformationPhotoNameAndArrow ;
