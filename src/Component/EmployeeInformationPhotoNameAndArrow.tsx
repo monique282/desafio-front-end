@@ -61,4 +61,4 @@ const EmployeeInformationPhotoNameAndArrow: React.FC<Props> = ({ list }) => {
   );
 };
 
-export default EmployeeInformationPhotoNameAndArrow ;
+export default EmployeeInformationPhotoNameAndArrow;
