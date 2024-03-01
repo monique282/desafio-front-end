@@ -8,7 +8,6 @@ import EmployeeInformationAfterClickingDesktopVersionArrow from "../Component/Em
 
 const ListEmployeesReturn: React.FC<Props> = ({ list }) => {
   const [isMobileView, setIsMobileView] = useState(false);
-
   useEffect(() => {
     const handleResize = () => {
       setIsMobileView(window.innerWidth <= 870);
