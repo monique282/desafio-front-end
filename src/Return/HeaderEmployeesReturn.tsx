@@ -1,4 +1,4 @@
-import { HeaderEmployees, TableNames } from "../assets/StylesPages/Home";
+import { HeaderEmployees, TableNames } from "../assets/Styles/Home";
 
 const HeaderEmployeesReturn = () => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import { Employees, Title } from "../assets/StylesPages/Home";
+import { Employees, Title } from "../assets/Styles/Home";
 import SearchContainerReturn from "./SearchContainer";
 import { PropsSearch } from "../Interface/Props";
 
