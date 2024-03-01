@@ -1,13 +1,7 @@
 import { Props } from "../Interface/Props";
 import React, { useState } from "react";
-import formatPhoneNumber from "../Utils/FormatPhoneNumber";
-import {
-  AssociatedSmallScreen,
-  ResponseSmallScreen,
-  TableDataSmallScreen,
-  TitleSmallScreen,
-} from "../assets/Styles/Home";
 import DownAndUpArrow from "./DownAndUpArrow";
+import EmployeeInformationPositionHireDateAndTelephoneNumber from "./EmployeeInformationPositionHireDateAndTelephoneNumber";
 
 const EmployeeInformationPhotoNameAndArrow: React.FC<Props> = ({ list }) => {
   const [openItems, setOpenItems] = useState<string[]>([]);
@@ -30,28 +24,7 @@ const EmployeeInformationPhotoNameAndArrow: React.FC<Props> = ({ list }) => {
             toggleItem={toggleItem}
           />
           {openItems.includes(main.id) ? (
-            <AssociatedSmallScreen>
-              <TableDataSmallScreen>
-                <TitleSmallScreen>Cargo</TitleSmallScreen>
-                <ResponseSmallScreen>{main.job}</ResponseSmallScreen>
-              </TableDataSmallScreen>{" "}
-              <TableDataSmallScreen>
-                {" "}
-                <TitleSmallScreen>Data de admissão</TitleSmallScreen>
-                <ResponseSmallScreen>
-                  {" "}
-                  {new Date(main.admission_date).toLocaleDateString()}
-                </ResponseSmallScreen>
-              </TableDataSmallScreen>{" "}
-              <TableDataSmallScreen>
-                {" "}
-                <TitleSmallScreen>Telefone</TitleSmallScreen>
-                <ResponseSmallScreen>
-                  {" "}
-                  {formatPhoneNumber(main.phone)}
-                </ResponseSmallScreen>
-              </TableDataSmallScreen>{" "}
-            </AssociatedSmallScreen>
+            <EmployeeInformationPositionHireDateAndTelephoneNumber main={main} />
           ) : (
             <></>
           )}
