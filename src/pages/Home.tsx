@@ -24,9 +24,12 @@ export default function Home() {
 
   useEffect(() => {
     const filteredList = list.filter((item) =>
-      item.name.toLowerCase().includes(search.toLowerCase())
-    );
-    setFilter(filteredList);
+    item.name.toLowerCase().includes(search.toLowerCase()) ||
+    item.job.toLowerCase().includes(search.toLowerCase()) ||
+    item.phone.toLowerCase().includes(search.toLowerCase())
+  );
+  setFilter(filteredList);
+  
   }, [search]); 
 
   return (
