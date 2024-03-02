@@ -2,8 +2,8 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { TableContainer } from "../assets/Styles/Home";
 import { Employee } from "../Interface/Employee";
-import ComponentThatOccupiesEmployeesTextAndSearchBar from "./ComponentThatOccupiesEmployeesTextAndSearchBar";
-import TableWithTheHeaderAndOperatingDataForDesktopWebMode from "./TableWithTheHeaderAndOperatingDataForDesktopWebMode";
+import ComponentThatOccupiesEmployeesTextAndSearchBar from "../component/ComponentThatOccupiesEmployeesTextAndSearchBar";
+import TableWithTheHeaderAndOperatingDataForDesktopWebMode from "../component/TableWithTheHeaderAndOperatingDataForDesktopWebMode";
 
 export default function Home() {
   const [list, setList] = useState<Employee[]>([]); 

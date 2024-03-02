@@ -1,4 +1,4 @@
-import formatPhoneNumber from "../Utils/FormatPhoneNumber";
+import formatPhoneNumber from "../utils/FormatPhoneNumber";
 import { Props } from "../Interface/Props";
 import { Associate, TableData } from "../assets/Styles/Home";
 

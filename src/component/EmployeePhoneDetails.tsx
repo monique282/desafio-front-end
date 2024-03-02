@@ -4,7 +4,7 @@ import {
   TableDataSmallScreen,
   TitleSmallScreen,
 } from "../assets/Styles/Home";
-import formatPhoneNumber from "../Utils/FormatPhoneNumber";
+import formatPhoneNumber from "../utils/FormatPhoneNumber";
 
 const EmployeePhoneDetails: React.FC<{
   phone: string;
