@@ -7,6 +7,7 @@ import {
 } from "../assets/Styles/Home";
 import formatPhoneNumber from "../Utils/FormatPhoneNumber";
 import EmployeePositionDetails from "./EmployeePositionDetails";
+import EmployeeJoiningDateDetails from "./EmployeeJoiningDateDetails";
 
 const EmployeeInformationPositionHireDateAndTelephoneNumber: React.FC<{
   main: { job: string; admission_date: string; phone: string };
@@ -14,14 +15,7 @@ const EmployeeInformationPositionHireDateAndTelephoneNumber: React.FC<{
   return (
     <AssociatedSmallScreen>
       <EmployeePositionDetails job={main.job}/>
-      <TableDataSmallScreen>
-        {" "}
-        <TitleSmallScreen>Data de admissão</TitleSmallScreen>
-        <ResponseSmallScreen>
-          {" "}
-          {new Date(main.admission_date).toLocaleDateString()}
-        </ResponseSmallScreen>
-      </TableDataSmallScreen>{" "}
+      <EmployeeJoiningDateDetails  admission_date={main.admission_date}/>
       <TableDataSmallScreen>
         {" "}
         <TitleSmallScreen>Telefone</TitleSmallScreen>
