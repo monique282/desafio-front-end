@@ -1,34 +1,30 @@
-# Teste Técnico Front-end Be
+# Front-end Be
 
-Este é um repositório para Testes Técnicos em Front-end da Be. Ele é destinado a pessoas que participam de nossos processos seletivos. 
-
-Se você chegou até aqui por meio de um formulário de Teste Técnico, siga em frente. Caso contrário, acompanhe a Be no [Linkedin](https://br.linkedin.com/company/bemobiletech), [Instagram](https://www.instagram.com/bemobile.tech/), [Facebook](https://www.facebook.com/bemobile.tech) ou na nossa comunidade no [Telegram](https://t.me/be_tech_community). Divulgamos novos processos seletivos por lá.
+Este é um Testes Técnicos em Front-end da Be. Ele é destinado demonstrar abilidades. 
 
 ## Desafio
 
 O Teste Técnico para Front-End da Be consiste em construir a visualização de uma tabela com dados que virão de uma API simulada, em json-server.
 
-### Mockup
+### Tecnologias usadas
 
-Este é o [projeto em Figma](https://www.figma.com/file/yw6th52zE9bubewc6ayTg5/Teste-T%C3%A9cnico-Front-End-Be.?type=design&node-id=1%3A4&mode=dev&t=vVxs9eyKybrYmq4Z-1) para você se orientar. Nele, você encontrará estilos, visualização desktop e mobile e outros padrões que deverá seguir.
+- React.js
+- TypeScript
+- Styled Components
 
-### Requisitos Gerais
+### Componentes do Layout
+A tabela contem as seguintes colunas:
 
-Deve-se utilizar React.js ou Vanilla JS (JavaScript puro) para construir o projeto.
-
-É permitido utilizar libs externas, mas recomenda-se que seja o mínimo possível.
-
-A visualização deve ser responsiva.
-
-A tabela deve conter as seguintes colunas:
-
-- imagem (thumb do/a usuário/a);
+- imagem;
 - nome;
 - cargo
 - data de admissão;
 - telefone.
 
-Também deve ser possível realizar pesquisa na tabela por meio de um input. O input de pesquisa deve permitir filtrar dados por cargo, nome e telefone.
+Também é possível realizar pesquisa na tabela por meio de uma caixa de pesquisa.
+![Caixa de pesquisa](Pesquisar.png)
+ A pesquisa  permiti filtrar os dados por cargo, nome e telefone.
+
 
 Datas e telefones devem ser formatadas no front-end e não na API.
 

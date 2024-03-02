@@ -1,16 +1,16 @@
-import { HeaderEmployees, TableNames } from "../assets/StylesPages/Home";
+import { HeaderEmployees, TableNames } from "../assets/Styles/Home";
 import { VscCircleFilled } from "react-icons/vsc";
 
-const HeaderEmployeeReturnSmallerScreen = () => {
+const TableHeaderInDesktopMode = () => {
   return (
     <HeaderEmployees>
       <TableNames style={{ width: "80px" }}>FOTO</TableNames>
       <TableNames>NOME</TableNames>
-      <TableNames style={{ width: "80px" }}>
+      <TableNames style={{ width: "30px" }}>
         <VscCircleFilled style={{ color: "#ffffff" }} />
       </TableNames>
     </HeaderEmployees>
   );
 };
 
-export default HeaderEmployeeReturnSmallerScreen;
+export default  TableHeaderInDesktopMode ;

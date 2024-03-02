@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const All = styled.div`
+export const TableContainer = styled.div`
   width: 100%;
   height: 100%;
   background-color: #f0f0f0;
@@ -104,6 +104,7 @@ export const HeaderEmployees = styled.div`
 `;
 export const TableNames = styled.div`
   width: 180px;
+  margin-left: 5px;
 `;
 
 export const Associate = styled.div`
@@ -125,4 +126,48 @@ export const TableData = styled.div`
   width: 180px;
   display: flex;
   align-items: center;
+  margin-right: 5px;
+`;
+export const AssociatedSmallScreen = styled.div`
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  box-shadow: 0px 1px 2px 0px #ffffff;
+  border-right-color: #ffffff;
+  img {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    margin-left: 12%;
+  }
+`;
+export const TitleSmallScreen = styled.div`
+  margin-right: 5%;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(28, 28, 28, 1);
+  margin-left: 5%;
+`;
+export const ResponseSmallScreen = styled.div`
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: right;
+  margin-right: 5%;
+`;
+export const TableDataSmallScreen = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;

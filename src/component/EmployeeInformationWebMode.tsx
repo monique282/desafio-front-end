@@ -1,8 +1,9 @@
-import formatPhoneNumber from "../Functionality/FormatPhoneNumber";
+import formatPhoneNumber from "../utils/FormatPhoneNumber";
 import { Props } from "../Interface/Props";
-import { Associate, TableData } from "../assets/StylesPages/Home";
+import { Associate, TableData } from "../assets/Styles/Home";
 
-const AssociateReturn: React.FC<Props> = ({ list }) => {
+
+const EmployeeInformationWebMode: React.FC<Props> = ({ list }) => {
   return (
     <>
       {list.map((main) => (
@@ -25,4 +26,4 @@ const AssociateReturn: React.FC<Props> = ({ list }) => {
   );
 };
 
-export default AssociateReturn;
+export default EmployeeInformationWebMode ;
