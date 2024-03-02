@@ -11,7 +11,7 @@ export default function Home() {
   const [filter, setFilter] = useState<Employee[]>([]); 
 
   useEffect(() => {
-    const urlRequest = `http://localhost:3000/employees`;
+    const urlRequest = `${import.meta.env.VITE_API_URL}/employees`;
 
     axios.get<Employee[]>(urlRequest) 
       .then((response) => {
