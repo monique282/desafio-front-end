@@ -22,7 +22,7 @@ A tabela contem as seguintes colunas:
 - telefone.
 
 Também é possível realizar pesquisa na tabela por meio de uma caixa de pesquisa.
-![Caixa de pesquisa](https://imgur.com/s9CJHEv)
+![Caixa de pesquisa](https://i.imgur.com/s9CJHEv.png)
  A pesquisa  permiti filtrar os dados por cargo, nome e telefone.
 
 
