@@ -6,16 +6,14 @@ import {
   TitleSmallScreen,
 } from "../assets/Styles/Home";
 import formatPhoneNumber from "../Utils/FormatPhoneNumber";
+import EmployeePositionDetails from "./EmployeePositionDetails";
 
 const EmployeeInformationPositionHireDateAndTelephoneNumber: React.FC<{
   main: { job: string; admission_date: string; phone: string };
 }> = ({ main }) => {
   return (
     <AssociatedSmallScreen>
-      <TableDataSmallScreen>
-        <TitleSmallScreen>Cargo</TitleSmallScreen>
-        <ResponseSmallScreen>{main.job}</ResponseSmallScreen>
-      </TableDataSmallScreen>{" "}
+      <EmployeePositionDetails job={main.job}/>
       <TableDataSmallScreen>
         {" "}
         <TitleSmallScreen>Data de admissão</TitleSmallScreen>
