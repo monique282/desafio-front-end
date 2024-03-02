@@ -21,7 +21,10 @@ A tabela contem as seguintes colunas:
 - data de admissão;
 - telefone.
 
-Também é possível realizar pesquisa na tabela por meio de uma caixa de pesquisa. O input de pesquisa deve permitir filtrar dados por cargo, nome e telefone.
+Também é possível realizar pesquisa na tabela por meio de uma caixa de pesquisa.
+![Caixa de pesquisa](Pesquisar.png)
+ A pesquisa  permiti filtrar os dados por cargo, nome e telefone.
+
 
 Datas e telefones devem ser formatadas no front-end e não na API.
 
