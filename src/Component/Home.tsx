@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { All } from "../assets/Styles/Home";
+import { TableContainer } from "../assets/Styles/Home";
 import { Employee } from "../Interface/Employee";
 import ComponentThatOccupiesEmployeesTextAndSearchBar from "./ComponentThatOccupiesEmployeesTextAndSearchBar";
 import TableWithTheHeaderAndOperatingDataForDesktopWebMode from "./TableWithTheHeaderAndOperatingDataForDesktopWebMode";
@@ -30,10 +30,10 @@ export default function Home() {
   }, [search]); 
 
   return (
-    <All>
+    <TableContainer>
       <ComponentThatOccupiesEmployeesTextAndSearchBar setSearch={setSearch} search={search} />
       {filter.length === 0 && <TableWithTheHeaderAndOperatingDataForDesktopWebMode list={list} />}
       {filter.length !== 0 && <TableWithTheHeaderAndOperatingDataForDesktopWebMode list={filter} />}
-    </All>
+    </TableContainer>
   );
 }

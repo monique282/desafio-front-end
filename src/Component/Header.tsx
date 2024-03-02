@@ -1,12 +1,12 @@
-import { All, HeaderBhutans } from "../assets/StylesPages/Header";
-import Fundo from "../assets/Styles/images/Fundo.png";
+import Fundo from "../assets/images/Fundo.png";
+import { HeaderContainer, HeaderBhutans } from "../assets/Styles/Header";
 
 export default function Header() {
   return (
-    <All>
+    <HeaderContainer>
       <HeaderBhutans>
         <img src={Fundo} alt="" />
       </HeaderBhutans>
-    </All>
+    </HeaderContainer>
   );
 }
