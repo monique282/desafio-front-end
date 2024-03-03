@@ -8,9 +8,9 @@ The Be Front-End Technical Test consists of building a data table with data that
 
 ### Technologies used
 
-- React.js
-- TypeScript
-- Styled Components
+- `React.js`
+- `TypeScript`
+- `Styled Components`
 
 NPM package management was used.
 
