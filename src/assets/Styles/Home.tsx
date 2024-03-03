@@ -92,20 +92,23 @@ export const HeaderEmployees = styled.div`
   overflow-y: auto;
   max-height: "400px";
   border: none;
-  p {
-    font-family: "Roboto";
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 19px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: rgba(255, 255, 255, 1);
-  }
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
 `;
 export const TableNames = styled.div`
   width: 180px;
   margin-left: 5px;
   color: rgba(255, 255, 255, 1);
+  background-color: red;
+  @media (max-width: 870px){
+    display:flex;
+    justify-content: center;
+  }
 `;
 
 export const Associate = styled.div`
@@ -128,6 +131,9 @@ export const TableData = styled.div`
   display: flex;
   align-items: center;
   margin-right: 5px;
+  @media (max-width: 870px){
+    justify-content: center;
+  }
 `;
 export const AssociatedSmallScreen = styled.div`
   height: 150px;
