@@ -15,8 +15,8 @@ The Be Front-End Technical Test consists of building a table view with data that
 NPM package management was used.
 
 ### Layout Components
-The table contains the following columns:
 
+The table contains the following columns:
 
 - Image;
 - Mame;
@@ -26,25 +26,24 @@ The table contains the following columns:
 
 You can also search the table using a search box.
 
-![Search Boxes](https://i.imgur.com/s9CJHEv.png)
+![Search Boxes](https://i.imgur.com/AydrSNY.png)
 
- The search allows you to filter data by position, name and telephone number.
+The search allows you to filter data by position, name and telephone number.
 
 In the mara mobile layout, the `Job`, `Admission date` and `Telephone` columns can be seen after clicking on the `down arrow`.
 
-![Arrow to open employee data](https://i.imgur.com/GZNsxGr.png)
+![Arrow to open employee data](https://i.imgur.com/4ELOtjY.png)
 
 How is the information displayed?
 
-![Arrow to open employee data](https://i.imgur.com/9gGnDvW.png)
+![Arrow to open employee data](https://i.imgur.com/2wNhndX.png)
 
 The collection of employee information can be done using the `arrow` up.
 
-![Arrow to collect employee data](https://i.imgur.com/RPPhag3.png)
-
-
+![Arrow to collect employee data](https://i.imgur.com/OXH9Axz.png)
 
 ### Commands to Run the Project
+
 You were instructed to use a simulated API.
 To access the data that will feed the project and run the project, do the following:
 
@@ -55,6 +54,6 @@ To access the data that will feed the project and run the project, do the follow
 5. Use the .env.example file to create the .env .
 6. Run the `npm run dev` command to run the project. This command provides a link from which you can open the link in your browser to interact with the project.
 
-``````
+```
 Remembering, all the commands above must be given in the folder that corresponds to the project.
-``````
+```
