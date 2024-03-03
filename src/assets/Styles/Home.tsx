@@ -104,10 +104,10 @@ export const TableNames = styled.div`
   width: 180px;
   margin-left: 5px;
   color: rgba(255, 255, 255, 1);
-  background-color: red;
-  @media (max-width: 870px){
-    display:flex;
+  @media (max-width: 870px) {
+    display: flex;
     justify-content: center;
+    margin-left: -1px;
   }
 `;
 
@@ -131,8 +131,9 @@ export const TableData = styled.div`
   display: flex;
   align-items: center;
   margin-right: 5px;
-  @media (max-width: 870px){
+  @media (max-width: 870px) {
     justify-content: center;
+    margin-right: 0px;
   }
 `;
 export const AssociatedSmallScreen = styled.div`

@@ -5,7 +5,7 @@ const TableHeaderInDesktopMode = () => {
   return (
     <HeaderEmployees>
       <TableNames style={{ width: "80px" }}>FOTO</TableNames>
-      <TableNames >NOME</TableNames>
+      <TableNames>NOME</TableNames>
       <TableNames style={{ width: "30px" }}>
         <VscCircleFilled style={{ color: "#ffffff" }} />
       </TableNames>

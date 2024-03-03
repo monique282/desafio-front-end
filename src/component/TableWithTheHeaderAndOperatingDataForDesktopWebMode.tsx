@@ -27,9 +27,7 @@ const TableWithTheHeaderAndOperatingDataForDesktopWebMode: React.FC<Props> = ({
         {!isMobileView && <TableHeaderInWebMode />}
         {!isMobileView && <EmployeeInformationWebMode list={list} />}
         {isMobileView && <TableHeaderInDesktopMode />}
-        {isMobileView && (
-          <EmployeeInformationPhotoNameAndArrow list={list} />
-        )}
+        {isMobileView && <EmployeeInformationPhotoNameAndArrow list={list} />}
       </div>
     </AllEmployees>
   );
