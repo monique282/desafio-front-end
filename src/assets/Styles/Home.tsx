@@ -162,7 +162,6 @@ export const TitleSmallScreen = styled.div`
   letter-spacing: 0em;
   text-align: left;
   color: rgba(28, 28, 28, 1);
-  margin-left: 5%;
 `;
 export const ResponseSmallScreen = styled.div`
   font-family: "Roboto";
@@ -171,11 +170,11 @@ export const ResponseSmallScreen = styled.div`
   line-height: 19px;
   letter-spacing: 0em;
   text-align: right;
-  margin-right: 5%;
 `;
 export const TableDataSmallScreen = styled.div`
-  width: 100%;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid rgba(223, 223, 223, 1)
 `;
