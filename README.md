@@ -1,59 +1,59 @@
 # Front-end Be
 
-Este é um Teste Técnico em Front-end da Be. Ele é destinado demonstrar habilidades. 
+This is a Be Front-end Technical Test. It is intended to demonstrate skills.
 
-## Desafio
+## Challenge
 
-O Teste Técnico para Front-End da Be consiste em construir a visualização de uma tabela com dados que virão de uma API simulada, em json-server.
+The Be Front-End Technical Test consists of building a table view with data that will come from a simulated API, in json-server.
 
-### Tecnologias usadas
+### Technologies used
 
 - React.js
 - TypeScript
 - Styled Components
 
-Foi utilizado o gerenciado de pacotes NPM.
+NPM package management was used.
 
-### Componentes do Layout
-A tabela contem as seguintes colunas:
+### Layout Components
 
-- imagem;
-- nome;
-- cargo
-- data de admissão;
-- telefone.
+The table contains the following columns:
 
-Também é possível realizar pesquisa na tabela por meio de uma caixa de pesquisa.
+- Image;
+- Mame;
+- Office;
+- Admission date;
+- Telephone;
 
-![Caixas  de pesquisa](https://i.imgur.com/s9CJHEv.png)
+You can also search the table using a search box.
 
- A pesquisa  permiti filtrar os dados por cargo, nome e telefone.
+![Search Boxes](https://i.imgur.com/HQnKqIJ.png)
 
-No layout mara mobile as colunas `Cargo`, `Data de admissão` e `Telefone`, podem ser vistas após um clique na `seta` para baixo.
+The search allows you to filter data by position, name and telephone number.
 
-![Seta para abrir dados do funcionário](https://i.imgur.com/GZNsxGr.png) 
+In the mara mobile layout, the `Job`, `Admission date` and `Telephone` columns can be seen after clicking on the `down arrow`.
 
-Como é a visualização das informações.
+![Arrow to open employee data](https://i.imgur.com/4ELOtjY.png)
 
-![Seta para abrir dados do funcionário](https://i.imgur.com/9gGnDvW.png) 
+How is the information displayed?
 
-O recolhimento das informações do funcionário pode ser feita na `seta` para cima.
+![Arrow to open employee data](https://i.imgur.com/pk3EKka.png)
 
-![Seta para recolher os dados do funcionário](https://i.imgur.com/RPPhag3.png) 
+The collection of employee information can be done using the `arrow` up.
 
+![Arrow to collect employee data](https://i.imgur.com/16CAwzB.png)
 
+### Commands to Run the Project
 
-### Comandos para Rodar o Projeto
-Foi orientado a Usar uma APi simulada.
-Para ter acesso aos dados que alimentarão o projeto e rodar o projeto, faça o seguinte:
+You were instructed to use a simulated API.
+To access the data that will feed the project and run the project, do the following:
 
-1. Caso você não tenha, instale o pacote [json-server](https://github.com/typicode/json-server);
-2. Clone este repositório do GitHub em sua máquina: [git@github.com:monique282/desafio-front-end.git](https://github.com/BeMobile/desafio-front-end);
-3. Entre na pasta do projeto, em sua máquina, e, por meio da linha de comando, execute o comando `npx json-server db.json`, para consumir a API simulada. Lembrando que você tem que deixar o comando rodando no terminal.
-4. Em outro terminal, execute o comando `npm install`, para fazer a instalação de todas as bibliotecas.
-5. Use o arquivo .env.example para criar o .env .
-6. Execute o comando `npm run dev`, para rodar o projeto. Esse comando disponibilizaram um link do qual você pode abrir o link no seu navegador para fazer a interação com o projeto.
+1. If you don't have it, install the [json-server](https://github.com/typicode/json-server) package;
+2. Clone this GitHub repository to your machine: [git@github.com:monique282/desafio-front-end.git](https://github.com/BeMobile/desafio-front-end);
+3. Enter the project folder, on your machine, and, using the command line, execute the command `npx json-server db.json`, to consume the simulated API. Remembering that you have to leave the command running in the terminal.
+4. In another terminal, run the `npm install` command to install all libraries.
+5. Use the .env.example file to create the .env .
+6. Run the `npm run dev` command to run the project. This command provides a link from which you can open the link in your browser to interact with the project.
 
-``````
-Lembrando, todos os comando acima tem ser dados na pasta que corresponde ao projeto.
-``````
+```
+Remembering, all the commands above must be given in the folder that corresponds to the project.
+```

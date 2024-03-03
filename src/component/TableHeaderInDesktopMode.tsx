@@ -13,4 +13,4 @@ const TableHeaderInDesktopMode = () => {
   );
 };
 
-export default  TableHeaderInDesktopMode ;
+export default TableHeaderInDesktopMode;

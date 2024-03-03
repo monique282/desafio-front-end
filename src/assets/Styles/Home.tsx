@@ -92,20 +92,23 @@ export const HeaderEmployees = styled.div`
   overflow-y: auto;
   max-height: "400px";
   border: none;
-  p {
-    font-family: "Roboto";
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 19px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: rgba(255, 255, 255, 1);
-  }
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
 `;
 export const TableNames = styled.div`
   width: 180px;
   margin-left: 5px;
   color: rgba(255, 255, 255, 1);
+  @media (max-width: 870px) {
+    display: flex;
+    justify-content: center;
+    margin-left: -1px;
+  }
 `;
 
 export const Associate = styled.div`
@@ -128,6 +131,10 @@ export const TableData = styled.div`
   display: flex;
   align-items: center;
   margin-right: 5px;
+  @media (max-width: 870px) {
+    justify-content: center;
+    margin-right: 0px;
+  }
 `;
 export const AssociatedSmallScreen = styled.div`
   height: 150px;
@@ -155,7 +162,6 @@ export const TitleSmallScreen = styled.div`
   letter-spacing: 0em;
   text-align: left;
   color: rgba(28, 28, 28, 1);
-  margin-left: 5%;
 `;
 export const ResponseSmallScreen = styled.div`
   font-family: "Roboto";
@@ -164,11 +170,11 @@ export const ResponseSmallScreen = styled.div`
   line-height: 19px;
   letter-spacing: 0em;
   text-align: right;
-  margin-right: 5%;
 `;
 export const TableDataSmallScreen = styled.div`
-  width: 100%;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid rgba(223, 223, 223, 1)
 `;
