@@ -105,6 +105,7 @@ export const HeaderEmployees = styled.div`
 export const TableNames = styled.div`
   width: 180px;
   margin-left: 5px;
+  color: rgba(255, 255, 255, 1);
 `;
 
 export const Associate = styled.div`
