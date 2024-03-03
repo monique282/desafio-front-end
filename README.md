@@ -57,3 +57,18 @@ To use a mock API and to access the data that will feed the project and run it, 
 ```
 Remembering, all the commands above must be given in the folder that corresponds to the project.
 ```
+### General requirements
+Use ReactJS or Vanilla JS to build the project;
+
+The view must be responsive;
+
+The table must contain the following columns:
+
+image (user's thumb);
+name;
+office
+admission date;
+phone.
+It must also be possible to search the table using an input. The search input must allow filtering data by name, position and telephone number;
+
+Dates and phones must be formatted in the front-end and not in the API.
