@@ -26,7 +26,7 @@ The table contains the following columns:
 
 You can also search the table using a search box.
 
-![Search Boxes](https://i.imgur.com/AydrSNY.png)
+![Search Boxes](https://i.imgur.com/HQnKqIJ.png)
 
 The search allows you to filter data by position, name and telephone number.
 
@@ -36,11 +36,11 @@ In the mara mobile layout, the `Job`, `Admission date` and `Telephone` columns c
 
 How is the information displayed?
 
-![Arrow to open employee data](https://i.imgur.com/2wNhndX.png)
+![Arrow to open employee data](https://i.imgur.com/pk3EKka.png)
 
 The collection of employee information can be done using the `arrow` up.
 
-![Arrow to collect employee data](https://i.imgur.com/OXH9Axz.png)
+![Arrow to collect employee data](https://i.imgur.com/16CAwzB.png)
 
 ### Commands to Run the Project
 
