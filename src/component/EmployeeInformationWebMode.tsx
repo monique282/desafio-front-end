@@ -1,7 +1,7 @@
 import formatPhoneNumber from "../utils/FormatPhoneNumber";
 import { Props } from "../Interface/Props";
 import { Associate, TableData } from "../assets/Styles/Home";
-
+import formatDate from "../utils/FormatDate";
 
 const EmployeeInformationWebMode: React.FC<Props> = ({ list }) => {
   return (
@@ -15,7 +15,7 @@ const EmployeeInformationWebMode: React.FC<Props> = ({ list }) => {
           <TableData style={{ width: "130px" }}>{main.job}</TableData>
           <TableData style={{ width: "180px" }}>
             {" "}
-            {new Date(main.admission_date).toLocaleDateString()}
+            {formatDate(main.admission_date)}
           </TableData>
           <TableData style={{ width: "150px" }}>
             {formatPhoneNumber(main.phone)}
@@ -26,4 +26,4 @@ const EmployeeInformationWebMode: React.FC<Props> = ({ list }) => {
   );
 };
 
-export default EmployeeInformationWebMode ;
+export default EmployeeInformationWebMode;

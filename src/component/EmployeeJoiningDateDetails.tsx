@@ -4,6 +4,7 @@ import {
   TableDataSmallScreen,
   TitleSmallScreen,
 } from "../assets/Styles/Home";
+import formatDate from "../utils/FormatDate";
 
 const EmployeeJoiningDateDetails: React.FC<{ admission_date: string }> = ({
   admission_date,
@@ -13,10 +14,7 @@ const EmployeeJoiningDateDetails: React.FC<{ admission_date: string }> = ({
       <TableDataSmallScreen>
         {" "}
         <TitleSmallScreen>Data de admissão</TitleSmallScreen>
-        <ResponseSmallScreen>
-          {" "}
-          {new Date(admission_date).toLocaleDateString()}
-        </ResponseSmallScreen>
+        <ResponseSmallScreen> {formatDate(admission_date)}</ResponseSmallScreen>
       </TableDataSmallScreen>{" "}
     </>
   );
