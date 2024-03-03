@@ -16,9 +16,8 @@ const EmployeeInformationPhotoNameAndArrow: React.FC<Props> = ({ list }) => {
   return (
     <>
       {list.map((main) => (
-        <>
+        <div key={main.id}>
           <DownAndUpArrow
-            key={main.id}
             main={main}
             openItems={openItems}
             toggleItem={toggleItem}
@@ -27,10 +26,8 @@ const EmployeeInformationPhotoNameAndArrow: React.FC<Props> = ({ list }) => {
             <EmployeeInformationPositionHireDateAndTelephoneNumber
               main={main}
             />
-          ) : (
-            <></>
-          )}
-        </>
+          ) : null}
+        </div>
       ))}
     </>
   );
