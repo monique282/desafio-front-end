@@ -17,6 +17,7 @@ NPM package management was used.
 ### Layout Components
 The table contains the following columns:
 
+
 - Image;
 - Mame;
 - Office;
