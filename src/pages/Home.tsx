@@ -16,6 +16,7 @@ export default function Home() {
     axios.get<Employee[]>(urlRequest) 
       .then((response) => {
         setList(response.data);
+        console.log(response.data)
       })
       .catch((err) => {
         console.log(err.response);
